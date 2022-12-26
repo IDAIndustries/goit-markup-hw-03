@@ -1,0 +1,384 @@
+/* цвет основного текста #434455 */
+/* цвет вторичного текста #2E2F42 */
+/* главный бекграунд цвет #FFFFFF */
+/* вторичный бекграунд цвет #F4F4FD */
+/* акцент #4D5AE5 */
+
+:root {
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f4f4fd;
+  --accent-color: #4d5ae5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  height: auto;
+}
+a {
+  text-decoration: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-background-color);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1158px;
+  outline: 1px solid black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 331px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 77px;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* Logo в Header */
+.nav .logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.logo-letters {
+  color: var(--accent-color);
+}
+
+/* Navigation */
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.nav-item a {
+  padding: 24px 0px;
+}
+
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* Способы связи */
+.contacts {
+  display: flex;
+  gap: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.contacts a {
+  padding: 24px 0px;
+}
+
+.nav-list.contacts {
+  margin-left: auto;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.section.hero {
+  background-color: var(--secondary-text-color);
+  padding: 192px 0;
+  text-align: center;
+  padding-bottom: 60px 0;
+}
+
+.hero-title {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 48px;
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 16px 32px;
+
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-button:active {
+  background-color: #404bbf;
+}
+
+/* OUR ADVANTAGES */
+
+.section.advantages {
+  padding: 120px 0;
+}
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+
+.section-list-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+}
+
+/* OUR ADVANTAGES */
+.advantages p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.advantages-list li {
+  width: 264px;
+}
+
+/*  */
+.section.doing {
+  padding-bottom: 120px;
+}
+
+.doing .section-title {
+  margin-bottom: 72px;
+}
+
+.doing-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* OUR TEAM */
+.section.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team .section-title {
+  margin-bottom: 72px;
+}
+
+.team-members {
+  display: flex;
+  gap: 24px;
+}
+
+.team-name {
+  padding: 32px 16px;
+  gap: 8px;
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  background-color: var(--primary-background-color);
+}
+
+.team h3 {
+  text-align: center;
+}
+
+.team-list-text {
+  line-height: 1.5;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* FOOTER LOGO */
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-background-color);
+  text-decoration: none;
+}
+
+.footer-logo-letters {
+  color: var(--accent-color);
+}
+
+/* FOOTER Text */
+.footer {
+  background-color: var(--secondary-text-color);
+  padding: 100px 0;
+}
+
+.footer-text {
+  margin-top: 16px;
+  padding-right: 850px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7e9fc;
+}
+
+/* PORTFOLIO MAIN */
+/* Цвет кнопок в спокойном состоянии #F4F4FD  */
+/* Цвет кнопок в режиме наведения #4D5AE5 */
+.section.examples {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+
+.button-list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  margin-bottom: 72px;
+  gap: 24px;
+}
+
+.sample-list li a {
+  text-decoration: none;
+}
+
+.sample-list .sample-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+.sample-list .sample-type {
+  color: var(--primary-text-color);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.sample-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.sample-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 16px;
+}
+
+.sample-item {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  width: 360px;
+  height: 420px;
+}
